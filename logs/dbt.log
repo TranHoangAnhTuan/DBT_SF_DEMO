@@ -1,0 +1,224 @@
+[0m14:29:17.651446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EE65D63D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EE637A9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EE637B010>]}
+
+
+============================== 14:29:17.656455 | 2e16a581-78cb-49de-b3c9-eaa4e49a4a03 ==============================
+[0m14:29:17.656455 [info ] [MainThread]: Running with dbt=1.8.2
+[0m14:29:17.657440 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\tuan\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init DBT_SNOWFLAKE', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:29:17.685189 [debug] [MainThread]: Starter project path: C:\Users\tuan\data-engineering-zoomcamp\04-analytics-engineering\dbt-env\Lib\site-packages\dbt\include\starter_project
+[0m14:29:17.738963 [info ] [MainThread]: 
+Your new dbt project "DBT_SNOWFLAKE" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:29:17.741242 [info ] [MainThread]: Setting up your profile.
+[0m14:30:39.926198 [error] [MainThread]: Encountered an error:
+
+[0m14:30:39.929219 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\tuan\data-engineering-zoomcamp\04-analytics-engineering\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tuan\data-engineering-zoomcamp\04-analytics-engineering\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tuan\data-engineering-zoomcamp\04-analytics-engineering\dbt-env\Lib\site-packages\dbt\cli\main.py", line 470, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\tuan\data-engineering-zoomcamp\04-analytics-engineering\dbt-env\Lib\site-packages\dbt\task\init.py", line 347, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\tuan\data-engineering-zoomcamp\04-analytics-engineering\dbt-env\Lib\site-packages\dbt\task\init.py", line 263, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\tuan\data-engineering-zoomcamp\04-analytics-engineering\dbt-env\Lib\site-packages\dbt\task\init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\tuan\data-engineering-zoomcamp\04-analytics-engineering\dbt-env\Lib\site-packages\dbt\task\init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tuan\data-engineering-zoomcamp\04-analytics-engineering\dbt-env\Lib\site-packages\dbt\task\init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "C:\Users\tuan\data-engineering-zoomcamp\04-analytics-engineering\dbt-env\Lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tuan\data-engineering-zoomcamp\04-analytics-engineering\dbt-env\Lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m14:30:39.932237 [debug] [MainThread]: Command `dbt init` failed at 14:30:39.932237 after 82.39 seconds
+[0m14:30:39.933255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EE637AC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EDFD6B1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EDFDB8A90>]}
+[0m14:30:39.935240 [debug] [MainThread]: Flushing usage events
+[0m14:30:46.001162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E639DF3690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E639B7A6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E639DF24D0>]}
+
+
+============================== 14:30:46.008097 | 6e0891a8-370c-49ae-94f2-fa92269cf3d9 ==============================
+[0m14:30:46.008097 [info ] [MainThread]: Running with dbt=1.8.2
+[0m14:30:46.010921 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\tuan\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init DBT_SNOWFLAKE', 'send_anonymous_usage_stats': 'True'}
+[0m14:30:46.044269 [info ] [MainThread]: A project called DBT_SNOWFLAKE already exists here.
+[0m14:30:46.047278 [debug] [MainThread]: Command `dbt init` succeeded at 14:30:46.046279 after 0.15 seconds
+[0m14:30:46.048276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E63349B1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E639B7B050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E633769F90>]}
+[0m14:30:46.049290 [debug] [MainThread]: Flushing usage events
+[0m14:31:49.194092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235D5443C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235D51CA550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235D5426110>]}
+
+
+============================== 14:31:49.198624 | d4430499-ed92-428d-9685-faa49cd51ab2 ==============================
+[0m14:31:49.198624 [info ] [MainThread]: Running with dbt=1.8.2
+[0m14:31:49.199131 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\tuan\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init DBT_SNOWFLAKE', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:31:49.226369 [info ] [MainThread]: A project called DBT_SNOWFLAKE already exists here.
+[0m14:31:49.228366 [debug] [MainThread]: Command `dbt init` succeeded at 14:31:49.227349 after 0.16 seconds
+[0m14:31:49.228889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235CEA7B1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235D545AC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235D5458810>]}
+[0m14:31:49.229901 [debug] [MainThread]: Flushing usage events
+[0m14:32:57.640995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C418F33DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C418CBA6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C418F19490>]}
+
+
+============================== 14:32:57.646539 | 9c6e0f37-a32b-4ddc-b569-f473a73eec7e ==============================
+[0m14:32:57.646539 [info ] [MainThread]: Running with dbt=1.8.2
+[0m14:32:57.647534 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\tuan\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:33:05.767368 [debug] [MainThread]: Starter project path: C:\Users\tuan\data-engineering-zoomcamp\04-analytics-engineering\dbt-env\Lib\site-packages\dbt\include\starter_project
+[0m14:33:05.797797 [info ] [MainThread]: 
+Your new dbt project "DBT_SF_DEMO" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:33:05.799329 [info ] [MainThread]: Setting up your profile.
+[0m14:40:29.208053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000139DA1DA110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000139DA1F1790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000139DA1F3D10>]}
+
+
+============================== 14:40:29.214948 | 46583fd3-9e46-452b-8c8d-b2e15d79a9e6 ==============================
+[0m14:40:29.214948 [info ] [MainThread]: Running with dbt=1.8.2
+[0m14:40:29.215167 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\tuan\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init SNOWFLAKE_NYTAXI', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:40:29.238917 [debug] [MainThread]: Starter project path: C:\Users\tuan\data-engineering-zoomcamp\04-analytics-engineering\dbt-env\Lib\site-packages\dbt\include\starter_project
+[0m14:40:29.269921 [info ] [MainThread]: 
+Your new dbt project "SNOWFLAKE_NYTAXI" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:40:29.271402 [info ] [MainThread]: Setting up your profile.
+[0m14:45:00.341206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BF07593BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BF075DF910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BF075DEBD0>]}
+
+
+============================== 14:45:00.346243 | 5b4a0b95-7772-4b51-a8ef-18cedbb457e1 ==============================
+[0m14:45:00.346243 [info ] [MainThread]: Running with dbt=1.8.2
+[0m14:45:00.347247 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\tuan\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:45:12.339354 [debug] [MainThread]: Starter project path: C:\Users\tuan\data-engineering-zoomcamp\04-analytics-engineering\dbt-env\Lib\site-packages\dbt\include\starter_project
+[0m14:45:12.371647 [info ] [MainThread]: 
+Your new dbt project "SNOWFLAKE_NYTAXI" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:45:12.373743 [info ] [MainThread]: Setting up your profile.
+[0m15:11:07.664975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219D34D3B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219D3483010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219D34D1450>]}
+
+
+============================== 15:11:07.671534 | c31b4edd-1fe7-4297-b1c9-3fe5740f87dc ==============================
+[0m15:11:07.671534 [info ] [MainThread]: Running with dbt=1.8.2
+[0m15:11:07.672544 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\tuan\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:11:07.706050 [info ] [MainThread]: dbt version: 1.8.2
+[0m15:11:07.707049 [info ] [MainThread]: python version: 3.11.3
+[0m15:11:07.707049 [info ] [MainThread]: python path: C:\Users\tuan\data-engineering-zoomcamp\04-analytics-engineering\dbt-env\Scripts\python.exe
+[0m15:11:07.708059 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m15:11:08.248173 [info ] [MainThread]: Using profiles dir at C:\Users\tuan\.dbt
+[0m15:11:08.248173 [info ] [MainThread]: Using profiles.yml file at C:\Users\tuan\.dbt\profiles.yml
+[0m15:11:08.249178 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\tuan\data-engineering-zoomcamp\04-analytics-engineering\DBT_SF_DEMO\dbt_project.yml
+[0m15:11:08.251176 [info ] [MainThread]: adapter type: snowflake
+[0m15:11:08.252174 [info ] [MainThread]: adapter version: 1.8.3
+[0m15:11:08.253175 [info ] [MainThread]: Configuration:
+[0m15:11:08.254180 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:11:08.254180 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:11:08.255203 [info ] [MainThread]: Required dependencies:
+[0m15:11:08.256176 [debug] [MainThread]: Executing "git --help"
+[0m15:11:08.287461 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:11:08.287461 [debug] [MainThread]: STDERR: "b''"
+[0m15:11:08.288457 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:11:08.289459 [info ] [MainThread]: Connection:
+[0m15:11:08.289459 [info ] [MainThread]:   account: IFSMYZS.ED98567
+[0m15:11:08.290884 [info ] [MainThread]:   user: tuananhhoangtran2010
+[0m15:11:08.291894 [info ] [MainThread]:   database: NY_TAXI
+[0m15:11:08.292936 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m15:11:08.292936 [info ] [MainThread]:   role: dev
+[0m15:11:08.293911 [info ] [MainThread]:   schema: YELLOW_TAXI_SCHEMA
+[0m15:11:08.294913 [info ] [MainThread]:   authenticator: None
+[0m15:11:08.295896 [info ] [MainThread]:   oauth_client_id: None
+[0m15:11:08.296939 [info ] [MainThread]:   query_tag: None
+[0m15:11:08.297898 [info ] [MainThread]:   client_session_keep_alive: False
+[0m15:11:08.298934 [info ] [MainThread]:   host: None
+[0m15:11:08.300002 [info ] [MainThread]:   port: None
+[0m15:11:08.300894 [info ] [MainThread]:   proxy_host: None
+[0m15:11:08.301906 [info ] [MainThread]:   proxy_port: None
+[0m15:11:08.302894 [info ] [MainThread]:   protocol: None
+[0m15:11:08.303970 [info ] [MainThread]:   connect_retries: 1
+[0m15:11:08.305184 [info ] [MainThread]:   connect_timeout: None
+[0m15:11:08.306208 [info ] [MainThread]:   retry_on_database_errors: False
+[0m15:11:08.307243 [info ] [MainThread]:   retry_all: False
+[0m15:11:08.308205 [info ] [MainThread]:   insecure_mode: False
+[0m15:11:08.309218 [info ] [MainThread]:   reuse_connections: None
+[0m15:11:08.311237 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m15:11:08.313191 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m15:11:08.315251 [debug] [MainThread]: Using snowflake connection "debug"
+[0m15:11:08.315251 [debug] [MainThread]: On debug: select 1 as id
+[0m15:11:08.316224 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:11:13.472835 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m15:11:13.473845 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m15:11:13.474880 [debug] [MainThread]: On debug: No close available on handle
+[0m15:11:13.475994 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m15:11:13.476847 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:11:13.476847 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\tuan\data-engineering-zoomcamp\04-analytics-engineering\DBT_SF_DEMO\dbt_project.yml> not found
+
+[0m15:11:13.477858 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m15:11:13.478859 [debug] [MainThread]: Command `dbt debug` failed at 15:11:13.478859 after 5.94 seconds
+[0m15:11:13.479885 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:11:13.479885 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219CCCAB1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219D34EE710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219D34EE590>]}
+[0m15:11:13.480869 [debug] [MainThread]: Flushing usage events
