@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: staging
+    database: NY_TAXI 
+     # For postgres:
+      #database: production
+    schema:  ALL_TRIPS_DATA 
+
+      # loaded_at_field: record_loaded_at
+    tables:
+      - name:  GREEN_TAXI_DATA
+      - name:  YELLOW_TAXI_DATA
+         # freshness:
+           # error_after: {count: 6, period: hour}
